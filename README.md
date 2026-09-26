@@ -1,194 +1,104 @@
-# Agent Operations Assistant
+# 🤖 Agent Assistant
 
-> Built and maintained by a single developer • Supporting 100+ weekly users • Powered by Google Apps Script and Google Workspace
+<p align="center">
+  <img src="https://img.shields.io/badge/weekly%20users-100%2B-brightgreen?style=flat">
+  <img src="https://img.shields.io/badge/version-1.0-orange?style=flat">
+  <img src="https://img.shields.io/badge/engine-Google%20Apps%20Script-4285F4?logo=google&logoColor=white">
+  <img src="https://img.shields.io/badge/backend-Google%20Sheets-34A853?style=flat">
+  <img src="https://img.shields.io/badge/status-actively%20maintained-2ea44f?style=flat">
+</p>
 
-A workforce support assistant designed to automate documentation, email generation, chat responses, and daily operational workflows.
+> A workforce support assistant for support agents — **interaction logging,
+> email generation, chat responses, and daily productivity tools** in one
+> Google Workspace-native interface. Fewer repetitive tasks, better
+> documentation, faster workflows.
 
----
+## 🧩 The Problem
 
-## Overview
+Support agents juggle documentation, emails, and chat replies across separate
+tools every interaction. That means repetitive typing, inconsistent
+documentation, slower handle times, and knowledge scattered everywhere.
 
-Agent Operations Assistant is a Google Apps Script based productivity platform developed to help support agents handle customer interactions more efficiently and consistently.
+## ✅ The Solution
 
-The application combines several operational tools into a single interface, reducing repetitive manual tasks, improving documentation quality, and accelerating daily workflows.
+Agent Assistant combines the daily toolset into one interface — log the
+interaction, draft the email, grab the chat response, run the timers —
+with a lightweight Google Sheets backend doing all the heavy lifting.
 
----
+## ✨ Key Features
 
-## Screenshots
+| Module | What it does |
+|---|---|
+| 📝 **Comment Assistant** | Structured interaction logging · driver tier classification · resolution reasons · workflow tracking · ride-link docs · one-click clipboard export |
+| 📧 **Email Assistant** | Rich-text editor · dynamic templates · driver/customer modes · smart canned responses · personalized greetings & closures |
+| 💬 **Chat Assistant** | Slash-command snippets · search-as-you-type · shared response repository · full create/edit/delete template management |
+| 🛠 **Productivity Tools** | Call & break timers · timezone lookup by area code · quick-copy templates · notifications |
 
-### Comment Assistant
+## 🖼 Screenshots
 
-![Comment Assistant](https://raw.githubusercontent.com/Mkhimer69/Agent-Operations-Assistant/refs/heads/main/screenshots/comment-assistant.png)
+**Comment Assistant** — logging, tracking & clipboard-ready documentation:
+<p align="center"><img src="https://raw.githubusercontent.com/Mkhimer69/Agent-Assistant/refs/heads/main/screenshots/comment-assistant.png" width="640"></p>
 
-Structured interaction logging, workflow tracking, resolution management, timer utilities, and clipboard-ready documentation generation.
+**Email Assistant** — templated rich-text email generation:
+<p align="center"><img src="https://raw.githubusercontent.com/Mkhimer69/Agent-Assistant/refs/heads/main/screenshots/email-assistant.png" width="640"></p>
 
----
+**Chat Assistant** — slash-command responses with a searchable knowledge base:
+<p align="center"><img src="https://raw.githubusercontent.com/Mkhimer69/Agent-Assistant/refs/heads/main/screenshots/chat-assistant.png" width="640"></p>
 
-### Email Assistant
+## 🏗 Architecture
 
-![Email Assistant](https://raw.githubusercontent.com/Mkhimer69/Agent-Operations-Assistant/refs/heads/main/screenshots/email-assistant.png)
-
-Rich text email generation with reusable templates, canned responses, dynamic greetings, and automated formatting.
-
----
-
-### Chat Assistant
-
-![Chat Assistant](https://raw.githubusercontent.com/Mkhimer69/Agent-Operations-Assistant/refs/heads/main/screenshots/chat-assistant.png)
-
-Slash-command driven response management with a searchable knowledge base, quick insertion workflows, response administration, and quick-reply automation.
-
----
-
-## Key Features
-
-### Interaction Logging
-
-- Structured interaction documentation
-- One-click clipboard export
-- Driver tier classification
-- Resolution reason generation
-- Workflow tracking
-- Ride-link documentation
-- Quick response templates
-
-### Email Assistant
-
-- Rich text email editor
-- Dynamic email templates
-- Driver and customer communication modes
-- Smart canned responses
-- Clipboard-ready email generation
-- Personalized greetings and closures
-
-### Chat Assistant
-
-- Slash-command snippets
-- Search-as-you-type response suggestions
-- Custom response management
-- Create, edit, and delete templates
-- Shared response repository
-- Knowledge base automation
-
-### Productivity Tools
-
-- Call timers
-- Break timers
-- Timezone lookup by area code
-- Quick-copy templates
-- Notification system
-- Feedback collection
-
----
-
-## Project Highlights
-
-- Built and maintained by a single developer
-- Supporting more than 100 weekly active users
-- Developed using Google Apps Script and Google Workspace
-- Uses Google Sheets as a lightweight data repository
-- Reduces repetitive manual work for support agents
-- Standardizes documentation and communication workflows
-- Continuously enhanced through user feedback
-
----
-
-## Technology Stack
-
-- Google Apps Script
-- JavaScript
-- HTML5
-- CSS3
-- Google Sheets
-- Quill Editor
-- Ionicons
-
----
-
-## Business Impact
-
-This platform helps support teams by:
-
-- Reducing repetitive work
-- Standardizing documentation
-- Accelerating email generation
-- Improving response consistency
-- Centralizing operational tools
-- Increasing daily productivity through automation
-
----
-
-## Architecture
-
-```text
-Support Agents
-        │
-        ▼
-Agent Operations Assistant
-        │
-        ├── Comment Assistant
-        ├── Email Assistant
-        ├── Chat Assistant
-        ├── Productivity Tools
-        ├── Feedback System
-        │
-        ▼
-Google Apps Script
-        │
-        ▼
-Google Sheets Repository
+```mermaid
+flowchart LR
+    A[Support Agents] --> B[Agent Assistant]
+    B --> C[Comment Assistant]
+    B --> D[Email Assistant]
+    B --> E[Chat Assistant]
+    B --> F[Productivity Tools]
+    B --> G[Feedback System]
+    B --> H[Google Apps Script]
+    H --> S[(Google Sheets<br/>repository)]
 ```
 
-### Core Modules
+## 💼 Business Impact
 
-#### Comment Assistant
+- Reduced repetitive manual work
+- Standardized documentation and communication
+- Accelerated email generation
+- Improved response consistency
+- Centralized operational tools → higher daily productivity
 
-Provides structured interaction logging, workflow tracking, timer utilities, and automated documentation generation.
+## 🛠 Technology
 
-#### Email Assistant
+Google Apps Script · JavaScript · HTML5 · CSS3 · Google Sheets · Quill Editor · Ionicons
 
-Generates professional emails using reusable templates, dynamic content, and canned responses.
+## ✨ Project Highlights
 
-#### Chat Assistant
+- Built and maintained by a single developer
+- 100+ weekly active users
+- Zero infrastructure — fully on Google Workspace
+- Continuously enhanced through user feedback
 
-Provides slash-command based response management with centralized knowledge sharing and quick insertion workflows.
+## 🔮 Future Enhancements
 
-#### Feedback System
+Advanced analytics dashboard · expanded workflow automation · additional
+reporting tools · template categories & tagging · usage statistics ·
+enhanced knowledge base · mobile experience improvements
 
-Collects user feedback and feature requests to support continuous improvement.
+## 📜 Version History
 
-#### Data Repository
+| Version | Highlights |
+|---|---|
+| **v1.0** | Initial release — Comment, Email & Chat assistants plus productivity toolset on a Google Sheets backend |
 
-Google Sheets serves as a lightweight backend for canned responses, user feedback, and knowledge management.
+## 📄 Disclaimer
 
----
-
-## Future Enhancements
-
-- Advanced analytics dashboard
-- Expanded workflow automation
-- Additional reporting tools
-- Template categories and tagging
-- Usage statistics
-- Enhanced knowledge base management
-- Mobile experience improvements
-
----
-
-## Changelog
-
-See **CHANGELOG.md** for release history and notable changes.
+This repository showcases the application's architecture, functionality, and
+design for portfolio purposes. Company-specific configurations, proprietary
+business logic, customer information, operational procedures, and sensitive
+internal data have been intentionally excluded.
 
 ---
 
-## Roadmap
-
-See **ROADMAP.md** for planned enhancements and upcoming features.
-
----
-
-## Disclaimer
-
-This repository showcases the application's architecture, functionality, and design for portfolio purposes.
-
-Company-specific configurations, proprietary business logic, customer information, operational procedures, and sensitive internal data have been intentionally excluded.
+<div align="center">
+<b>🤖 Agent Assistant</b><br><i>Every interaction tool. One interface.</i>
+</div>
